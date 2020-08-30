@@ -187,6 +187,7 @@ input, select, textarea {
 			.container {
 				width: 70em;
 			}
+			
 
 		}
 
@@ -195,6 +196,7 @@ input, select, textarea {
 			.container {
 				width: calc(100% - 100px);
 			}
+	
 
 		}
 
@@ -1589,7 +1591,6 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 	}
-
 		.image img {
 			display: block;
 			width: 100%;
@@ -1604,6 +1605,10 @@ input, select, textarea {
 			float: left;
 			margin: 0 2em 2em 0;
 		}
+		.image.right {
+			float: right;
+			margin: 0 2em 2em 0;
+		}
 
 		.image.centered {
 			display: block;
@@ -1614,12 +1619,22 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+	
 
 		.image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+		@media only screen and (max-width: 600px) {
+			.image {
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+		  }
+		
+	
 
 /* Button */
 
